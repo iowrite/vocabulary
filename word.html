@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Mermaid Diagram from GitHub</title>
 <script type="module">
-  import mermaid from 'node_modules/mermaid/dist/mermaid.esm.min.mjs';
+  import mermaid from './node_modules/mermaid/dist/mermaid.esm.min.mjs';
 
   async function loadDiagram(url) {
     try {
@@ -19,7 +19,7 @@
   }
 
   window.onload = function() {
-    const url = 'vocabulary.mmd';
+    const url = './vocabulary.mmd';
     loadDiagram(url);
   };
 </script>
